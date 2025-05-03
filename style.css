@@ -450,7 +450,7 @@ progress::-moz-progress-bar {
     text-align: center;
     text-decoration: none;
     color: var(--white-color);
-    background-color: var(--first-color);
+    background-color: var(--title-color);
 }
 
 .container {
@@ -473,10 +473,9 @@ progress::-moz-progress-bar {
 
 
 
-
 .section-title {
-    border-top: thin solid var(--first-color);
-    border-bottom: thin solid var(--first-color);
+    border-top: thin solid var(--title-color);
+    border-bottom: thin solid var(--title-color);
     margin: 3.2rem auto;
     padding: 0.8rem 1.6rem;
     width: 25rem;
@@ -538,7 +537,7 @@ progress::-moz-progress-bar {
 .contact-card > svg {
     width: 3.2rem;
     height: 3.2rem;
-    fill: var(--first-color);
+    fill: var(--text-color);
 }
 
 .contact-card > small {
@@ -744,4 +743,77 @@ progress::-moz-progress-bar {
     .services .section-title {
         grid-column: span 3;
     }
+}
+
+.section {
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: center;     /* centra verticalmente */
+    min-height: 100vh;       /* ocupa toda la altura de la ventana */
+    flex-direction: column;  /* si hay varios elementos, se apilan verticalmente */
+}
+
+/* About me */
+.about-us-experience {
+    padding: 2rem;
+}
+
+.about-us-intro {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.about-us-card {
+    background-color: #f9f9f9;
+    border-left: 5px solid #005aee;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.about-us-card h3 {
+    margin-top: 0;
+    color: #003366;
+    font-size: 1.8rem; /* Igual que h3 estándar */
+}
+
+.about-us-dates {
+    font-size: 1.3rem; /* Similar a h5 */
+    color: #666;
+    font-weight: normal;
+}
+
+.about-us-card ul {
+    padding-left: 1.4rem;
+    margin: 1rem 0;
+}
+
+.about-us-card ul li {
+    list-style: '→ ';
+    margin-bottom: 0.6rem;
+    font-size: 1.5rem; /* Igual que el texto <p> */
+    line-height: 1.8rem;
+}
+
+.about-us-tools {
+    font-size: 1.4rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+/* center title */
+.aboutme-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--title-color);
+}
+/* subtitle */
+.aboutme-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--title-color);
 }
